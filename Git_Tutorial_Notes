@@ -102,6 +102,9 @@ They now have their own version of the code to work on.
   - Collaboration tools (PRs, comments)
   - Project & team management features
 
+Git is a version control system, while GitHub and GitLab are web-based platforms that host Git repositories,
+offering features like collaboration, code management, and CI/CD pipelines, with GitLab focusing on a more comprehensive DevOps approach
+
 ✅ Git manages **how** code changes  
 ✅ GitHub manages **where** and **how teams work together**
 
