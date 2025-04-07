@@ -1,0 +1,110 @@
+# 📂 Version Control System (VCS) – Notes
+
+## 🔑 Primary Concepts of VCS
+
+Definition : A version control system (VCS) is software that tracks and manages changes to files (primarily source code) over time,
+allowing teams to collaborate, revert to previous versions, and easily track changes. 
+
+1. **Sharing Code**
+2. **Versioning**
+
+---
+
+## 1️⃣ Sharing Code
+
+👨‍💻 **Scenario**: Two developers are working on a Calculator application.  
+- Developer A is building the *Addition* feature  
+- Developer B is building the *Subtraction* feature  
+Once they’re done, both need to **merge** their code into a single project.
+
+📌 For small projects, you might share code over Gmail or file transfer.  
+⚠️ But in **real-world software development**, projects involve:
+- Multiple files
+- Frequent updates
+- Team collaboration
+
+✅ A **Version Control System** helps manage this code sharing and integration efficiently.
+
+---
+
+## 2️⃣ Versioning
+
+🔄 Suppose Developer A initially wrote a method to add two numbers. Later, they modify it to support adding three or four numbers.  
+But the **customer prefers the original version** (adding only two numbers).
+
+📌 In this case, we need a way to **switch back to the older version of the code**.
+
+### ✅ Benefits of Versioning:
+- Track changes made daily
+- View what was modified and when
+- Switch between multiple versions easily
+
+---
+
+## 🛠 Popular Version Control Systems
+
+- CVS *(Centralized)*
+- SVN *(Centralized)*
+- **Git** *(Distributed)* → ✅ Most widely used today
+
+---
+
+## 🧠 Centralized vs Distributed VCS
+
+### 🔗 Centralized (e.g., CVS, SVN)
+
+- All developers connect to a **single central server**
+- Example:
+  - Developer A uploads code to the central server
+  - Developer B downloads from that server
+
+❌ If the central server goes down, collaboration stops
+
+---
+
+### 🌐 Distributed (e.g., Git)
+
+- Every developer has a **local copy** of the repository
+- Developer A can share code with Developer B directly or through **forks** (copies)
+- Multiple developers can collaborate independently
+
+✅ More fault-tolerant  
+✅ Faster operations (done locally)
+
+---
+
+## 🔄 What is a Fork? *(Interview Important)*
+
+> A **fork** is a copy of a repository.
+
+📌 Used when you want to:
+- Work independently on a copy
+- Propose changes without affecting the original code
+
+🧑‍💻 Example:
+If a company hosts its source code in a GitHub repository called `example`, another user can fork it.  
+They now have their own version of the code to work on.
+
+---
+
+## 🆚 Git vs GitHub
+
+### 🧰 Git
+- Open-source **version control tool**
+- Can be installed on your own server (e.g., EC2 instance)
+- Helps track and manage code locally
+
+### ☁️ GitHub / GitLab / Bitbucket
+- Platforms **built on top of Git**
+- Offer:
+  - Remote repositories
+  - UI for commits/issues
+  - Collaboration tools (PRs, comments)
+  - Project & team management features
+
+✅ Git manages **how** code changes  
+✅ GitHub manages **where** and **how teams work together**
+
+---
+
+> ✍️ **Note**: These concepts are critical for interviews and real-world software development workflows. Make sure you're comfortable with both Git commands and GitHub platform features.
