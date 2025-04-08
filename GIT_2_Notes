@@ -61,6 +61,13 @@ ls .git
 
 You’ll see: `HEAD`, `config`, `hooks`, `objects`, `refs`
 
+config: Git settings
+
+hooks: To automate actions (e.g., block secrets)
+
+objects: Stores file snapshots
+
+refs: References to branches
 ---
 
 ## 🔍 Step 4: Track and Stage Changes
