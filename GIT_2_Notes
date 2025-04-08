@@ -1,0 +1,210 @@
+# 📘 Git & GitHub – Practical Notes with Commands
+
+This document contains **step-by-step practical Git commands** with explanations to help beginners understand how version control works in real-world development.
+
+---
+
+## 📂 Step 1: Creating a Sample Project
+
+```bash
+mkdir example.com
+cd example.com
+ls
+vim calculator.sh
+```
+
+🔧 Inside `calculator.sh`, write simple code:
+
+```bash
+x=a+b
+```
+
+Save and exit.
+
+---
+
+## 🔀 Step 2: Setting Up Git for Version Control
+
+### ✅ Install Git
+
+1. Go to [https://git-scm.com](https://git-scm.com)
+2. Download Git for your operating system
+3. After installation, verify:
+
+```bash
+git --version
+```
+
+You should see the installed Git version.
+
+---
+
+## 🧱 Step 3: Initialize a Git Repository
+
+```bash
+git init
+```
+
+To confirm initialization:
+
+```bash
+ls -la
+```
+
+You’ll see a hidden `.git` directory — this is where Git tracks everything.
+
+Explore its contents:
+
+```bash
+ls .git
+```
+
+You’ll see: `HEAD`, `config`, `hooks`, `objects`, `refs`
+
+---
+
+## 🔍 Step 4: Track and Stage Changes
+
+Check status:
+
+```bash
+git status
+```
+
+Output: Untracked file (`calculator.sh`)
+
+Stage the file:
+
+```bash
+git add calculator.sh
+```
+
+Check again:
+
+```bash
+git status
+```
+
+Now it's ready to commit.
+
+---
+
+## ✏️ Step 5: Commit Initial Version
+
+```bash
+git commit -m "Initial version: addition functionality"
+```
+
+Check log:
+
+```bash
+git log
+```
+
+---
+
+## ➕ Step 6: Modify File and Create New Version
+
+Open file and update content:
+
+```bash
+vim calculator.sh
+```
+
+Update code:
+
+```bash
+x=a+b+c
+```
+
+Check changes:
+
+```bash
+git status
+git diff
+```
+
+Stage and commit:
+
+```bash
+git add calculator.sh
+git commit -m "Updated to add three numbers"
+```
+
+---
+
+## ➖ Step 7: Add Subtraction and Commit Again
+
+Add new logic:
+
+```bash
+vim calculator.sh
+```
+
+```bash
+x=a+b
+y=a-b
+```
+
+Then:
+
+```bash
+git add calculator.sh
+git commit -m "Added subtraction functionality"
+```
+
+View versions:
+
+```bash
+git log
+```
+
+---
+
+## 🔄 Step 8: Revert to Previous Version
+
+1. Use `git log` to get a previous commit ID.
+2. Reset:
+
+```bash
+git reset --hard <commit-id>
+```
+
+3. Check file:
+
+```bash
+cat calculator.sh
+```
+
+Now the file reflects the older version.
+
+---
+
+## 🌰 Bonus: What is Fork?
+
+> A **fork** is a personal copy of someone else's project.
+
+Used to:
+- Experiment freely
+- Propose changes via pull requests
+
+---
+
+## ✅ Summary of Key Commands
+
+| Action | Command |
+|--------|---------|
+| Initialize Git | `git init` |
+| Check Status | `git status` |
+| Stage File | `git add <file>` |
+| Commit Changes | `git commit -m "message"` |
+| View History | `git log` |
+| Revert to Version | `git reset --hard <commit-id>` |
+| Push to GitHub | `git push -u origin main` |
+
+---
+
+👨‍💼 **Author:** L Jeevan  
+🔧 Java Full Stack Developer | Backend Dev Enthusiast  
+📍 [GitHub Profile](https://github.com/L-Jeevan)
+
