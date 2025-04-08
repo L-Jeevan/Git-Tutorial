@@ -27,3 +27,6 @@ vim notes.txt          # Edit file
 git status             # Git sees the file is changed
 git add notes.txt      # You stage the file (prepare it)
 git commit -m "Added new points to notes.txt"   # You save it as a version
+
+git add command is required to select the changes that will be staged for the next commit.
+git commit is used to create a snapshot of the staged changes along a timeline of a Git projects history.
